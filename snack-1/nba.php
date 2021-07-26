@@ -3,7 +3,7 @@ Olimpia Milano - Cantù | 55-60 -->
 
 <?php
 
-$matches_day1 = [
+$matches_day_1 = [
     [
         "home_name" => "Boston Celtics",
         "home_score" => rand(50, 150),
@@ -41,8 +41,14 @@ $matches_day1 = [
     <title>Document</title>
 </head>
 <body>
-    <?php 
-        echo ($matches_day1[1]["home_name"] . $matches_day1[1]["home_score"]);
-    ?>
+    <ul>
+    
+        <?php for ($i = 0; $i < count($matches_day_1); $i++) { ?>
+        <li>
+            prova
+        </li>
+        <?php } ?>
+    
+    </ul>
 </body>
 </html>
