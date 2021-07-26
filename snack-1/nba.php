@@ -6,27 +6,27 @@ Olimpia Milano - Cantù | 55-60 -->
 $matches_day1 = [
     [
         "home_name" => "Boston Celtics",
-        "home_points" => rand(50, 150),
+        "home_score" => rand(50, 150),
         "away_name" => "Brooklin Nets",
-        "away_points" => rand(50, 150)
+        "away_score" => rand(50, 150)
     ],
     [
         "home_name" => "New York Knicks",
-        "home_points" => rand(50, 150),
+        "home_score" => rand(50, 150),
         "away_name" => "Philadelphia 76ers",
-        "away_points" => rand(50, 150)
+        "away_score" => rand(50, 150)
     ],
     [
         "home_name" => "Toronto Raptors",
-        "home_points" => rand(50, 150),
+        "home_score" => rand(50, 150),
         "away_name" => "Chicago Bulls",
-        "away_points" => rand(50, 150)
+        "away_score" => rand(50, 150)
     ],
     [
         "home_name" => "Cleveland Cavaliers",
-        "home_points" => rand(50, 150),
+        "home_score" => rand(50, 150),
         "away_name" => "Detroit Pistons",
-        "away_points" => rand(50, 150)
+        "away_score" => rand(50, 150)
     ]
 ];
 
@@ -42,7 +42,7 @@ $matches_day1 = [
 </head>
 <body>
     <?php 
-        echo ($matches_day1[1]["home_name"] . $matches_day1[1]["home_points"]);
+        echo ($matches_day1[1]["home_name"] . $matches_day1[1]["home_score"]);
     ?>
 </body>
 </html>
