@@ -45,7 +45,15 @@ $matches_day_1 = [
     
         <?php for ($i = 0; $i < count($matches_day_1); $i++) { ?>
         <li>
-            prova
+            <?php echo (
+            $matches_day_1[$i]["home_name"] .
+            " - " .
+            $matches_day_1[$i]["away_name"] .
+            " | " . 
+            $matches_day_1[$i]["home_score"] .
+            "-" .
+            $matches_day_1[$i]["away_score"]
+            ) ?>
         </li>
         <?php } ?>
     
