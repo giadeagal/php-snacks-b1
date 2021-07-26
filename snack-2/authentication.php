@@ -5,6 +5,8 @@
 $name = $_GET["name"];
 $mail = $_GET["mail"];
 $age = $_GET["age"];
+$welcome = "Accesso riuscito, benvenuto $name";
+$get_out = "Accesso negato, inserisci i dati correttamente";
 
 ?>
 
@@ -14,9 +16,20 @@ $age = $_GET["age"];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Autenticazione</title>
 </head>
 <body>
-<?php echo($name . $mail . $age) ?>
+    <?php 
+        if (
+                strlen($name) > 3 && 
+                strpos($mail, '.') && 
+                strpos($mail, '@') &&
+                is_numeric($age)
+            ) {
+                echo ($welcome);
+            } else {
+                echo ($get_out);
+            }
+    ?>
 </body>
 </html>
